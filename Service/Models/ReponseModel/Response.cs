@@ -12,4 +12,10 @@ namespace Service.Models.ReponseModel
         public string ErrorMessage { get; set; }
         public string Id { get; set; }
     }
+
+    public class ListDataResponse<T> : Response
+    {
+        public List<T> Data { get; set; }
+        public int TotalRecord { get; set; }
+    }
 }

@@ -1,5 +1,7 @@
 ﻿using MongoDB.Driver;
 using Service.Entities;
+using Service.Models.ReponseModel;
+using Service.Models.RequestModel;
 using Service.MongoConnect;
 using System;
 using System.Collections.Generic;
@@ -28,10 +30,10 @@ namespace Service.Repository
             _collection = context.Database.GetCollection<TEntity>(typeof(TEntity).Name);
         }
 
-        //public virtual async Task<FilterResponse<TEntity>> FilterExpression(List<FilterParams> filters, Pager param)
-        //{
-        //    return _collection.Filter(filters, param);
-        //}
+        public virtual async Task<FilterResponse<TEntity>> FilterExpression(List<FilterParams> filters, Pager param)
+        {
+            return _collection.Filter(filters, param);
+        }
         public virtual TEntity GetById(string id)
         {
             return _collection.Find(e => e.Id == id).FirstOrDefault();

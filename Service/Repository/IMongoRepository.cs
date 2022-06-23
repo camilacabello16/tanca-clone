@@ -1,5 +1,7 @@
 ﻿using MongoDB.Driver;
 using Service.Entities;
+using Service.Models.ReponseModel;
+using Service.Models.RequestModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,7 @@ namespace Service.Repository
 
         //Task<FilterResponse<TEntity>> FilterBy(
         //Expression<Func<TEntity, bool>> filterExpression, Pager param);
-        //Task<FilterResponse<TEntity>> FilterExpression(List<FilterParams> filters, Pager param);
+        Task<FilterResponse<TEntity>> FilterExpression(List<FilterParams> filters, Pager param);
         TEntity GetById(string id);
         Task<TEntity> GetByIdAsync(string id);
         Task<List<TEntity>> GetAllAsync();

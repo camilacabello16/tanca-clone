@@ -20,24 +20,23 @@ namespace Service.Service
             this.repository = repository;
         }
 
-        //public async virtual Task<ListDataOutput<TEntity>> GetAll()
-        //{
-        //    var response = new ListDataOutput<TEntity>();
-        //    try
-        //    {
-        //        var listData = await repository.GetAllAsync();
-        //        response.TotalRecord = listData.Count();
-        //        response.Data = listData.ToList();
-        //        response.StatusCode = ResponseStatusCode.Success;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        response.StatusCode = ResponseStatusCode.Error;
-        //        response.ErrorMessage = EnumMessage.ERROR.GetDescription();
-        //        Sentry.SentrySdk.CaptureException(ex);
-        //    }
-        //    return response;
-        //}
+        public async virtual Task<ListDataResponse<T>> GetAll()
+        {
+            var response = new ListDataResponse<T>();
+            try
+            {
+                var listData = await repository.GetAllAsync();
+                response.TotalRecord = listData.Count();
+                response.Data = listData.ToList();
+                response.StatusCode = ResponseStatusCode.Success;
+            }
+            catch (Exception ex)
+            {
+                response.StatusCode = ResponseStatusCode.Error;
+                response.ErrorMessage = EnumMessage.ERROR.GetDescription();
+            }
+            return response;
+        }
 
         public async Task<T> GetById(string id)
         {

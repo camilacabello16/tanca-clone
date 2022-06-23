@@ -38,6 +38,63 @@ namespace Service.Models
         Special = 2
     }
 
+    public enum TASK_STATUS
+    {
+        [Description("Tiến hành")]
+        Process = 1,
+        [Description("Hoàn thành")]
+        Done = 2
+    }
+    public enum SALARY_TYPE
+    {
+        [Description("Lương tháng")]
+        Salary = 1,
+        [Description("Phụ cấp")]
+        Allowance = 2
+    }
+
+    public enum REQUEST_TYPE
+    {
+        [Description("Tạm ứng")]
+        AdvanceMoney = 1,
+        [Description("Làm thêm giờ")]
+        OT = 2,
+        [Description("Công tác")]
+        Business = 3,
+        [Description("Nghỉ phép")]
+        Leave = 4
+    }
+
+    public enum LEAVE_TYPE
+    {
+        [Description("1/2 ngày")]
+        HaftDay = 1,
+        [Description("Trong ngày")]
+        Day = 2,
+        [Description("Nhiều ngày")]
+        ManyDay = 3
+    }
+
+    public enum EMPLOYEE_STATUS
+    {
+        [Description("Không hoạt động")]
+        DeActive = 1,
+        [Description("Hoạt động")]
+        Active = 2,
+        [Description("Nghỉ việc")]
+        Quit = 3
+    }
+
+    public enum REQUEST_STATUS
+    {
+        [Description("Đang chờ")]
+        Pending = 1,
+        [Description("Chấp nhận")]
+        Accept = 2,
+        [Description("Từ chối")]
+        Reject = 3
+    }
+
     public static class EnumExtensionMethod
     {
         public static string GetDescription(this Enum value, bool resource = false)

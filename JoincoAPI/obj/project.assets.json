@@ -1058,19 +1058,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\buidu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\tanca-clone\\tanca-clone\\JoincoAPI\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\buidu\\hello\\tanca-clone.git\\JoincoAPI\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "H:\\tanca-clone\\tanca-clone\\JoincoAPI\\Controller.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "H:\\tanca-clone\\tanca-clone\\JoincoAPI\\obj\\",
+      "projectPath": "C:\\Users\\buidu\\hello\\tanca-clone.git\\JoincoAPI\\Controller.csproj",
+      "packagesPath": "C:\\Users\\buidu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\buidu\\hello\\tanca-clone.git\\JoincoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\buidu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1084,8 +1084,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj": {
-              "projectPath": "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj"
+            "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj"
             }
           }
         }
@@ -1123,7 +1123,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

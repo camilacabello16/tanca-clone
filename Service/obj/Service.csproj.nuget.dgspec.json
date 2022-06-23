@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj": {}
+    "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj": {}
   },
   "projects": {
-    "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj": {
+    "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "H:\\tanca-clone\\tanca-clone\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "H:\\tanca-clone\\tanca-clone\\Service\\obj\\",
+        "projectPath": "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\buidu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\buidu\\hello\\tanca-clone.git\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\buidu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
