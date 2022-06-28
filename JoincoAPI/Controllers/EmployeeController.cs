@@ -18,10 +18,16 @@ namespace Controller.Controllers
             this.service = service;
         }
 
-        [HttpGet]
+        [HttpPost]
         public async Task<ListDataResponse<Employee>> GetEmployee(EmployeePager pager)
         {
             return await service.GetEmployee(pager);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<Employee> GetById (string id)
+        {
+            return await service.GetById(id);
         }
 
         [HttpPost]

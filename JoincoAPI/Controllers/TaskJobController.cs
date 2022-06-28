@@ -9,32 +9,32 @@ namespace Controller.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class RequestController : ControllerBase
+    public class TaskJobController : ControllerBase
     {
-        private readonly RequestService service;
+        private readonly TaskJobService service;
 
-        public RequestController(RequestService service)
+        public TaskJobController(TaskJobService service)
         {
             this.service = service;
         }
 
         [HttpPost]
-        public async Task<ListDataResponse<Request>> GetRequest(RequestPager pager)
+        public async Task<ListDataResponse<TaskJob>> GetTask(TaskPager pager)
         {
-            return await service.GetRequest(pager);
+            return await service.GetTask(pager);
         }
         [HttpGet]
-        public async Task<ListDataResponse<Request>> GetAll()
+        public async Task<ListDataResponse<TaskJob>> GetAll()
         {
             return await service.GetAll();
         }
         [HttpPost]
-        public async Task<Response> Insert(Request input)
+        public async Task<Response> Insert(TaskJob input)
         {
             return await service.Insert(input, HttpContext);
         }
         [HttpPost]
-        public async Task<Response> Update(Request input)
+        public async Task<Response> Update(TaskJob input)
         {
             return await service.Update(input, HttpContext);
         }

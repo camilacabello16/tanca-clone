@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service.Entities
 {
-    public class Task : BaseEntity
+    public class TaskJob : BaseEntity
     {
         public string Name { get; set; }
         public string? Assign { get; set; }

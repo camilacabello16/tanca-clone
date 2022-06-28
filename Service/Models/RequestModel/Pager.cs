@@ -19,12 +19,24 @@ namespace Service.Models.RequestModel
 
     public class EmployeePager : Pager
     {
-        public int Status { get; set; }
+        public int? Status { get; set; }
     }
 
     public class RequestPager : Pager
     {
-        public int Type { get; set; }
-        public int Status { set; get; }
+        public int? Type { get; set; }
+        public int? Status { set; get; }
+    }
+
+    public class BoardPager : Pager
+    {
+        public string? ProjectId { get; set; }
+    }
+
+    public class TaskPager : Pager
+    {
+        public string? BoardId { get; set; }
+        public string? Assign { get; set; }
+        public int? Status { get; set; }
     }
 }

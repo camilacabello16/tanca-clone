@@ -9,32 +9,32 @@ namespace Controller.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class RequestController : ControllerBase
+    public class BoardController : ControllerBase
     {
-        private readonly RequestService service;
+        private readonly BoardService service;
 
-        public RequestController(RequestService service)
+        public BoardController(BoardService service)
         {
             this.service = service;
         }
 
         [HttpPost]
-        public async Task<ListDataResponse<Request>> GetRequest(RequestPager pager)
+        public async Task<ListDataResponse<Board>> GetBoard(BoardPager pager)
         {
-            return await service.GetRequest(pager);
+            return await service.GetBoard(pager);
         }
         [HttpGet]
-        public async Task<ListDataResponse<Request>> GetAll()
+        public async Task<ListDataResponse<Board>> GetAll()
         {
             return await service.GetAll();
         }
         [HttpPost]
-        public async Task<Response> Insert(Request input)
+        public async Task<Response> Insert(Board input)
         {
             return await service.Insert(input, HttpContext);
         }
         [HttpPost]
-        public async Task<Response> Update(Request input)
+        public async Task<Response> Update(Board input)
         {
             return await service.Update(input, HttpContext);
         }
